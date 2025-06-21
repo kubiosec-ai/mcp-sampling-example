@@ -1,0 +1,12 @@
+mcp:
+  servers:
+    sampling-server:
+      transport: "http"
+      url: "http://localhost:8080/mcp"
+
+openai:
+  api_key: "${OPENAI_API_KEY}"  # Reads from your shell environment
+  base_url: "https://api.openai.com/v1"  # Optional (default)
+
+llms:
+  default: openai.gpt-4.1  # Optional: sets fallback model if none is specified
